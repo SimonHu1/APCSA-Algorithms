@@ -1,4 +1,7 @@
 public class Main
 {
-    Algorithm algorithm = new Algorithm();
+    public static void main(String[]args)
+    {
+        System.out.println(Algorithm.multiplesOfTenBetween(10,99));
+    }
 }
