@@ -38,4 +38,23 @@ public class Algorithm
         }
         return sum;
     }
+    public static int sumOfDigits(int number)
+    {
+        int sum = 0;
+        while(number!=0)
+        {
+            sum += number%10;
+            number -= number%10;
+            number = number/10;
+        }
+        return sum;
+    }
+    public static int biggestPow2Before(int number)
+    {
+        int i = 0;
+        while(Math.pow(2,i)<number)
+        {
+
+        }
+    }
 }
