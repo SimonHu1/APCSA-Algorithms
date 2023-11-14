@@ -72,4 +72,22 @@ public class Algorithm
         }
         return count;
     }
+    public static boolean stringContainsOther(String str1,String str2)
+    {
+        return str1.contains(str2);
+    }
+    public static String reversedString(String str)
+    {
+        String result = "";
+        for(int i = str.length()-1;i>-1;i--)
+        {
+            result += str.substring(i,i+1);
+        }
+        return result;
+    }
+    public static boolean isPalindrome(String str)
+    {
+        return(str.equals(reversedString(str)));
+    }
+
 }
