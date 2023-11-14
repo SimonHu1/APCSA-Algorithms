@@ -11,6 +11,7 @@ public class Algorithm
     }
     public static int sumOfOddsBetween(int first, int second)
     {
+        if(first==second) return 0;
         int sum = 0;
         while(first<=second)
         {
@@ -52,9 +53,23 @@ public class Algorithm
     public static int biggestPow2Before(int number)
     {
         int i = 0;
-        while(Math.pow(2,i)<number)
+        while(Math.pow(2,i+1)<=number)
         {
-
+            i++;
         }
+        return (int)Math.pow(2,i);
+    }
+    public static int stringsInAnotherString(String str1,String str2)
+    {
+        int count = 0;
+        if(str2.length()>str1.length()) return 0;
+        for(int i = 0;i<(str1.length()-(str2.length()-1));i++)
+        {
+            if(str1.substring(i,str2.length()+i).equals(str2))
+            {
+                count ++;
+            }
+        }
+        return count;
     }
 }
