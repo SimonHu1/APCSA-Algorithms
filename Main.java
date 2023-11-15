@@ -21,5 +21,21 @@ public class Main
         System.out.println(Algorithm.biggestPow2Before(800));
         System.out.println(Algorithm.biggestPow2Before(2000));
         System.out.println(Algorithm.biggestPow2Before(16));
+
+        //4.3 || Developing Algorithms Using Strings
+
+        System.out.println(Algorithm.stringContainsOther("Hello World", "World"));
+        System.out.println(Algorithm.stringContainsOther("Hello","hello"));
+
+        System.out.println(Algorithm.reversedString("gohangasalami"));
+        System.out.println(Algorithm.reversedString("superpower"));
+
+        System.out.println(Algorithm.isPalindrome("amanaplanacanalpanama"));
+        System.out.println(Algorithm.isPalindrome("racecar"));
+        System.out.println(Algorithm.isPalindrome("superpower"));
+
+        System.out.println(Algorithm.stringsInAnotherString("Mississippi", "si"));
+        System.out.println(Algorithm.stringsInAnotherString("qqqqq", "q"));
+        System.out.println(Algorithm.stringsInAnotherString("qq", "qqq"));
     }
 }
